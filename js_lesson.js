@@ -18,3 +18,9 @@ function take(fn, count) {
 function map(fn, array) {
   return array.map((el) => fn(el));
 }
+
+function bind(fn, context) {
+  return function(...args) {
+    return fn.call(context, ...args)
+  }
+}
