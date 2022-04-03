@@ -34,3 +34,7 @@ function pluck(objects, fieldName) {
 function filter(arr, fn) {
   return arr.filter((el) => fn(el) === true);
 }
+
+function count(obj) {
+  return Object.keys(obj).length;
+}
