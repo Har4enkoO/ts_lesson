@@ -14,3 +14,7 @@ function take(fn, count) {
   }
   return result;
 }
+
+function map(fn, array) {
+  return array.map((el) => fn(el));
+}
