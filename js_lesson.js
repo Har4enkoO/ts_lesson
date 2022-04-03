@@ -6,3 +6,11 @@ function sequence(start = 0, step = 1) {
     return returnValue;
   };
 }
+
+function take(fn, count) {
+  let result = [];
+  for (let i = 0; i < count; i++) {
+    result = [...result, fn()];
+  }
+  return result;
+}
