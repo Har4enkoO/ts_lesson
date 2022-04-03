@@ -1,7 +1,7 @@
 export type User = {
-  name: string;
-  age: number;
-  occupation: string;
+  name: string,
+  age: number,
+  occupation: string,
 };
 
 export const users: User[] = [
