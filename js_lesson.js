@@ -20,7 +20,13 @@ function map(fn, array) {
 }
 
 function bind(fn, context) {
-  return function(...args) {
-    return fn.call(context, ...args)
-  }
+  return function (...args) {
+    return fn.call(context, ...args);
+  };
+}
+
+function pluck(objects, fieldName) {
+  let result = [];
+  objects.forEach((el) => (result = [...result, el[fieldName]]));
+  return result;
 }
