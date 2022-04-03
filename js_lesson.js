@@ -30,3 +30,7 @@ function pluck(objects, fieldName) {
   objects.forEach((el) => (result = [...result, el[fieldName]]));
   return result;
 }
+
+function filter(arr, fn) {
+  return arr.filter((el) => fn(el) === true);
+}
