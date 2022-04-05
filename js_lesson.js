@@ -19,6 +19,8 @@ function map(fn, array) {
   return array.map((el) => fn(el));
 }
 
+//you need to write your own map and filter , don't use existing!
+
 function bind(fn, context) {
   return function (...args) {
     return fn.call(context, ...args);
